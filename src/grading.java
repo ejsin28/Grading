@@ -5,6 +5,7 @@ public class grading {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("ì‹œìž‘í•©ë‹ˆë‹¤.");
 		int[][]grade={
 				{1,3,2,4,3,1,4,2,2,1},
 				{3,2,4,2,2,1,1,3,4,1},
@@ -16,7 +17,7 @@ public class grading {
 		double []angrade={12.3,8.4,9.0,10.2,11.0,9.7,10.6,11.8,9.5,8.5};
 		double sum=0;
 		for(int i=0;i<5;i++){
-			System.out.print("ÇÐ»ý"+(i+1));
+			System.out.print("í•™ìƒ"+(i+1));
 			for(int j=0; j<10; j++){
 				System.out.print(" "+grade[i][j]);
 			}
@@ -25,7 +26,7 @@ public class grading {
 		System.out.println();
 		
 		
-		System.out.print("Á¤´ä : ");
+		System.out.print("ì •ë‹µ : ");
 		for(int i=0; i<args.length; i++){
 			System.out.print(args[i]+" ");
 			answer[i]=Integer.parseInt(args[i]);
@@ -33,7 +34,7 @@ public class grading {
 		System.out.println();
 		
 		for(int i=0;i<5;i++){
-			System.out.print("ÇÐ»ý"+(i+1)+"ÀÇ Á¡¼ö : ");
+			System.out.print("í•™ìƒ"+(i+1)+"ì˜ ì ìˆ˜ : ");
 			for(int j=0; j<10; j++){
 				if(grade[i][j]==answer[j]){
 					sum=sum+angrade[j];
@@ -43,7 +44,7 @@ public class grading {
 					ox[j]="X";
 				}
 			}
-			System.out.print(sum+"Á¡");
+			System.out.print(sum+"ì ");
 			System.out.println();
 			sum=0;
 			for(int k=0;k<10;k++)
